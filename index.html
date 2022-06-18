@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+	 href="style.css">
+	<title> Conditional Statements- JavaScript Tutorial #05</title>
+</head>
+<body>
+	
+	<b style="font-size: 24px;">Result:</b> <i id="res"> </i>
+
+<br>	
+<br>	
+	<button onclick="submit()">Submit</button>
+	
+
+
+			<h1>Tutorial about If,If-else and If-elseif() Conditions</h1>
+</body>
+		<script>
+/* IF-else conditional statements.
+
+			 	// var age = prompt("Enter your age!","");
+			 	// if (age >= 18) {
+			 	// 	document.write("<h2> Yes you can vote. </h2>");
+			 	// }
+
+			 	// else {
+			 	// 	document.write("<h2> You can not vote.</h2>");
+
+			 	// }
+*/
+
+ // types of functions are user-defined function = (functions which a user or programmer made for his need) and pre-defined function (a function which is already made during the devolopment of the language).
+
+/*			
+			// var age = 17;
+			var age = prompt("Enter your age number?","");
+			// if-condition
+			if (age >= 18 && age <= 65) {
+				document.write("<h2> Yes you can vote. </h2>");
+			}
+			// else if-condition
+			else if (age == 17){
+				document.write("<h2> You have to wait one more year for vote.</h2>");
+			}
+			// else if-condition
+			else if (age >= 0 && age <= 16){
+				document.write("<h2> You have not permission to vote.</h2>");
+			}
+			// else if-condition
+			else if (age >=66  || age <= 0){
+				document.write("<h2> You cannot vote just chill.</h2>");
+			}
+			// else-condition
+			else {
+				document.write("<h2> Undefined </h2>");
+			}
+*/
+
+
+		/*	
+			function submit() {
+				var age = prompt("Enter your age number?","");
+				var res=  age+ " <h4> Yes you can vote. </h4>";
+				document.getElementById('res').innerHTML = res;
+			}
+		*/
+
+
+			function submit() {
+			var age = prompt("Enter your age number?","");
+			if (age >= 18 && age <= 65) {
+				
+				var result = age + " -Year" + "<br><br> <h4> Yes you can vote. </h4>";
+				
+			}
+
+			else if (age == 17){
+				
+				var result = age+ " -Year" + "<br><br> <h4> You have to wait one more year for vote. </h4>";
+				
+			}
+		
+
+			else if (age >= 0 && age <= 16){
+				
+				var result = age+ " -Year" + "<br><br> <h4> You have not permission to vote. </h4>";
+				
+			}
+			
+
+			else if (age >=66  || age <= 0){
+				
+				var result = age+ " -Year" + "<br><br> <h4> You cannot vote just chill. </h4>";
+				
+			}
+		
+			else {
+				
+				var result = age+ " -Year" + "<br><br> <h4> Undefined Conditional Statement </h4>";
+				
+			}
+
+			document.getElementById('res').innerHTML= result;
+		}
+
+				// we will use ".innerHTML" if we want to save or print the result value into a search box or any place like into an "input" tag represented by an ID.
+
+           // we will use ".value" if we want to target the inner value of a search box or any place like value of "input".
+ 		</script>
+</html>
